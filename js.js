@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function(){
 	if(yearEl) yearEl.textContent = new Date().getFullYear();
 });
 
-// Contact form handling
 document.addEventListener('DOMContentLoaded', function(){
 	const form = document.getElementById('contact-form');
 	const status = document.getElementById('form-status');
@@ -37,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function(){
 			message: form.message.value.trim()
 		};
 
-		// For now, simply show a success message and clear the form.
 		status.textContent = 'Thanks ill get back to you soon.';
 		status.style.color = '#90ee90';
 		form.reset();
